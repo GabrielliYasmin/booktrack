@@ -13,13 +13,19 @@ while True:
 
     if opcao == "1":
         livro = input("Digite o nome do livro: ")
-        meus_livros.append(livro)
+        meus_livros.append({"nome": livro, "status": "Não iniciado"
+        })
         print(f"✔️ Livro '{livro}' adicionado com sucesso!")
 
     if opcao == "2":
         for livro in meus_livros:
             print(livro)
 
+    if opcao== "3":
+        print("Qual livro você quer atualizar? ")
+
+    if livro in meus_livros:
+        status=input("Qual o status da leitura? ")
     if opcao== "0":
         print("Até logo, boa leitura! ")
         break
